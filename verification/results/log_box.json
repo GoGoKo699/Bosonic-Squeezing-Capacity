@@ -1,0 +1,53 @@
+{
+  "status": "passed",
+  "scope": "finite numerical quadrature checks, not a capacity proof",
+  "boxes": [
+    {
+      "L": 4.0,
+      "K": 1.0,
+      "dimension_per_sign": 1,
+      "gram_error": 2.220446049250313e-15,
+      "generator_form_error": 1.3322676295501878e-15,
+      "maximum_H_on_half_line_subspace": 3.7310167672085432,
+      "safe_H_bound": 88.72199380385939
+    },
+    {
+      "L": 8.0,
+      "K": 1.5,
+      "dimension_per_sign": 3,
+      "gram_error": 5.329070518200751e-15,
+      "generator_form_error": 7.327471962526033e-15,
+      "maximum_H_on_half_line_subspace": 243.1036997400335,
+      "safe_H_bound": 7452.394967604321
+    },
+    {
+      "L": 12.0,
+      "K": 2.0,
+      "dimension_per_sign": 7,
+      "gram_error": 1.1546319456101628e-14,
+      "generator_form_error": 3.774758283725532e-14,
+      "maximum_H_on_half_line_subspace": 34217.907977052564,
+      "safe_H_bound": 589986.1188938892
+    },
+    {
+      "L": 18.0,
+      "K": 1.0,
+      "dimension_per_sign": 5,
+      "gram_error": 7.549516567451064e-15,
+      "generator_form_error": 5.773159728050814e-15,
+      "maximum_H_on_half_line_subspace": 1886044.0203958664,
+      "safe_H_bound": 106697449.84816208
+    }
+  ],
+  "physical_coordinate_cross_check": {
+    "normalization": 1.0000000000000002,
+    "Q2": 2.602868241607074,
+    "P2": 4.859165292810145
+  },
+  "protected_qubit_profile": {
+    "normalization": 1.000000000000002,
+    "Q2": 1.4999999999999996,
+    "P2": 1.4999999999999987,
+    "mean_photons": 0.9999999999999991
+  }
+}

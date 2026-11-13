@@ -1,0 +1,49 @@
+{
+  "status": "passed",
+  "scope": "Six finite theta values; direct integral versus mixture",
+  "sharp_upper_bound": 1.2337005501361697,
+  "rows": [
+    {
+      "theta": 0,
+      "direct_variance": 1.2337005501361689,
+      "poisson_variance": 1.2337005501361697,
+      "variance_derivative": 0.0,
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "theta": 0.01,
+      "direct_variance": 1.233634414272159,
+      "poisson_variance": 1.233634414272158,
+      "variance_derivative": -0.013174344707033159,
+      "absolute_difference": 8.881784197001252e-16
+    },
+    {
+      "theta": 0.1,
+      "direct_variance": 1.2275426974115093,
+      "poisson_variance": 1.2275426974115136,
+      "variance_derivative": -0.11830558405919023,
+      "absolute_difference": 4.218847493575595e-15
+    },
+    {
+      "theta": 1,
+      "direct_variance": 0.9158167560073567,
+      "poisson_variance": 0.9158167560073538,
+      "variance_derivative": -0.41866668688357234,
+      "absolute_difference": 2.886579864025407e-15
+    },
+    {
+      "theta": 10,
+      "direct_variance": 0.058393644443694104,
+      "poisson_variance": 0.058393644443695256,
+      "variance_derivative": -0.00705994119531872,
+      "absolute_difference": 1.1518563880486e-15
+    },
+    {
+      "theta": 100,
+      "direct_variance": 0.0050638756613885505,
+      "poisson_variance": 0.00506387566139004,
+      "variance_derivative": -5.129171105801994e-05,
+      "absolute_difference": 1.4892601041260889e-15
+    }
+  ]
+}

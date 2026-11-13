@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "scope": "Local source structure, mathematical delimiters/braces, navigation and Python compilation; no hosted rendering claim.",
+  "markdown_files": 12,
+  "local_links": 57,
+  "protected_inline_math": 270,
+  "display_math_blocks": 106,
+  "python_files_compiled": 5
+}
