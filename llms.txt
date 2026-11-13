@@ -1,0 +1,29 @@
+# Bosonic Squeezing Capacity
+
+The central task is ordinary unassisted quantum communication through iid, unobserved, known-axis Gaussian random squeezing, with an unconditional average input-photon constraint. For every fixed positive noise width, matching bounds establish Q_sigma(E)=log_2 ln E+O_sigma(1).
+
+## Authoritative routes
+
+- Scientific entrypoint: science/README.md.
+- Channel, energy, operational capacity, main law, and pump-energy identity: science/01-model.md.
+- Explicit finite-energy subspace and coherent-information lower bound: science/02-achievability.md.
+- Arbitrary correlated-block converse, domain closures, spectral bins, and Mehler heat trace: science/03-converse.md.
+- Inherited sign/parity subsystem, reference-preserving recovery, and one-photon example: science/04-protected-qubit.md.
+- Bounded coherent information for arbitrary multimode Gaussian physical inputs: science/05-gaussian-inputs.md.
+- Exact closest-work distinctions and inherited ingredients: science/06-related-work.md.
+- Physical interpretation and scope: science/07-interpretation.md.
+- Primary bibliography and pinned public comparison accounts: references/README.md.
+- Numerical and structural checks: verification/README.md and verification/REPORT.md.
+
+## Distinctions to preserve
+
+- The limit fixes sigma>0 before E tends to infinity. The zero-noise identity limit has a different rate.
+- The budget is mean input photon number across the full block, not a photon cutoff or a uniform per-mode maximum.
+- The converse allows arbitrary encoders, input correlations, and collective decoding. It does not rely on Gaussian optimality.
+- Squeezing is translation only after a non-Gaussian logarithmic-coordinate transformation; the physical photon Hamiltonian then has exponential weights.
+- The sign factor is a coherent qubit, not a classical flag. Its construction and logical observables are inherited.
+- The lower construction has bounded generator bandwidth and energy bounded on the whole finite-dimensional input subspace.
+- The Gaussian-input bound concerns coherent-information optimization over physical Gaussian input states, including correlated blocks. It is not an unrestricted Gaussian-hardware no-go theorem.
+- The noise model and logarithmic reduction are credited to prior work. The new contribution is the energy-capacity law and Gaussian-input comparison.
+- The plotted curves are proven bounds with conservative constants, not an exact numerical capacity or a practical crossover study.
+- Fixed-axis squeeze noise contains no photon loss or additional phase/displacement noise. No robustness, efficient encoder, or receiver-work theorem is supplied.

@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "scope": "Selected finite Fock convention checks and numerical quadrature of the heat-trace density majorant; no capacity certification.",
+  "matrix_checks": {
+    "fock_cutoff": 180,
+    "casimir_interior_max_absolute_residual": 3.637978807091713e-12,
+    "mehler_cases": [
+      {
+        "beta": 0.2,
+        "t": 0.3,
+        "finite_fock_trace_real": 2.74586320183169,
+        "finite_fock_trace_imag": 0.0,
+        "mehler_trace": 2.745863201831687,
+        "absolute_difference": 3.1086244689504383e-15
+      },
+      {
+        "beta": 0.4,
+        "t": 1.0,
+        "finite_fock_trace_real": 0.8650429430138029,
+        "finite_fock_trace_imag": 0.0,
+        "mehler_trace": 0.865042943013799,
+        "absolute_difference": 3.885780586188048e-15
+      },
+      {
+        "beta": 0.8,
+        "t": 1.5,
+        "finite_fock_trace_real": 0.482670137640904,
+        "finite_fock_trace_imag": 0.0,
+        "mehler_trace": 0.4826701376409048,
+        "absolute_difference": 7.771561172376096e-16
+      }
+    ]
+  },
+  "integral_checks": [
+    {
+      "beta": 0.1,
+      "integral_over_2pi": 1.3926952879610637,
+      "quadrature_error_estimate": 4.4303263261974215e-11,
+      "analytic_split_integral_bound": 1.4021716211399204,
+      "log_10_over_beta_bound": 1.4658711977588557
+    },
+    {
+      "beta": 0.001,
+      "integral_over_2pi": 2.860713107132729,
+      "quadrature_error_estimate": 1.5367900143302818e-11,
+      "analytic_split_integral_bound": 2.8672500914453214,
+      "log_10_over_beta_bound": 2.9317423955177113
+    },
+    {
+      "beta": 1e-06,
+      "integral_over_2pi": 5.059520393733619,
+      "quadrature_error_estimate": 1.477251334708121e-11,
+      "analytic_split_integral_bound": 5.066056808506243,
+      "log_10_over_beta_bound": 5.1305491921559945
+    }
+  ]
+}

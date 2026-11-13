@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "scope": "Evaluation of established bounds and one conservative finite-energy witness; not an optimized capacity calculation.",
+  "sigma": 1.0,
+  "example": {
+    "E": 1e+20,
+    "K": 0.25,
+    "L": 46.29856193781244,
+    "dimension": 6,
+    "achievable_rate_lower_bound": 2.2420332318926706,
+    "gaussian_input_CI_upper_bound": 1.5797178955538098
+  },
+  "figure_points": 401
+}
