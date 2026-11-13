@@ -61,7 +61,7 @@ On the first factor, $`WGW^\dagger=-i\partial_y`$. Set
 ```math
 g_j(y)=\begin{cases}
 \sqrt{\dfrac{2}{L}}\sin\!\left(\dfrac{j\pi(y+L/2)}{L}\right),
-&-L/2<y<L/2,\\[1mm]
+&-L/2\lt y\lt L/2,\\[1mm]
 0,&\text{otherwise},
 \end{cases}\qquad j=1,\ldots,d.
 ```
@@ -69,19 +69,19 @@ g_j(y)=\begin{cases}
 These are orthonormal. They are Dirichlet-Laplacian modes on a finite interval, extended by zero; they are **not** claimed to be eigenvectors of the full-line momentum $`-i\partial_y`$. Since they vanish at both endpoints, the extensions belong to $`H^1(\mathbb R)`$. For every $`g`$ in their span,
 
 ```math
-\|g'\|_2^2
+\Vert g'\Vert _2^2
 =\sum_{j=1}^d |c_j|^2\left(\frac{j\pi}{L}\right)^2
-\le K^2\|g\|_2^2.
+\le K^2\Vert g\Vert _2^2.
 ```
 
 The physical code subspace is
 
 ```math
 \mathcal C_{L,K}
-=W^\dagger\!\left(\operatorname{span}\{g_1,\ldots,g_d\}\otimes\mathbb C^2\right).
+=W^\dagger\!\left(\mathrm{span}\{g_1,\ldots,g_d\}\otimes\mathbb C^2\right).
 ```
 
-In particular, its generator second moment, interpreted as a quadratic form, satisfies $`\operatorname{Tr}(\rho G^2)\le K^2`$ for every normalized state supported on $`\mathcal C_{L,K}`$.
+In particular, its generator second moment, interpreted as a quadratic form, satisfies $`\mathrm{Tr}(\rho G^2)\le K^2`$ for every normalized state supported on $`\mathcal C_{L,K}`$.
 
 ### 2. The physical energy bound holds on the whole subspace
 
@@ -97,16 +97,16 @@ For a positive-half-line component, the inverse transformation is $`\psi(x)=x^{-
 The same formulas hold on the negative half-line. All code components have support in $`[-L/2,L/2]`$ in $`y`$, so
 
 ```math
-\langle Q^2\rangle_\psi\le e^L\|g\|_2^2,\qquad
+\langle Q^2\rangle_\psi\le e^L\Vert g\Vert _2^2,\qquad
 \langle P^2\rangle_\psi
-\le e^L\left(\|g'\|_2+\frac{\|g\|_2}{2}\right)^2
-\le e^L(K+\tfrac12)^2\|g\|_2^2.
+\le e^L\left(\Vert g'\Vert _2+\frac{\Vert g\Vert _2}{2}\right)^2
+\le e^L(K+\tfrac12)^2\Vert g\Vert _2^2.
 ```
 
 For a state with both half-line components, add the corresponding quadratic forms. This also covers complex superpositions and coherences between the two signs: their supports are disjoint in the physical position coordinate. Therefore
 
 ```math
-\sup_{\substack{\psi\in\mathcal C_{L,K}\\\|\psi\|=1}}
+\sup_{\substack{\psi\in\mathcal C_{L,K}\\\Vert \psi\Vert =1}}
 \left\langle n+\frac12\right\rangle_\psi
 \le C_K e^L=E+\frac12.
 ```
@@ -134,8 +134,8 @@ Here $`p_\rho`$ is the spectral density of $`G`$, with the sign factor traced ou
 Rescale the environment's canonical coordinates by $`R'=R/(\sqrt2\sigma)`$ and $`P'=\sqrt2\sigma P_R`$. Then $`e_0`$ is the ordinary oscillator vacuum and $`e_k`$ is a coherent state with amplitude $`-i\sigma k`$. Hence its mean excitation is $`\sigma^2k^2`$, and
 
 ```math
-\operatorname{Tr}\!\left[n_{\rm env}\,\mathcal N_\sigma^{\mathrm c}(\rho_{L,K})\right]
-=\sigma^2\operatorname{Tr}(\rho_{L,K}G^2)\le\sigma^2K^2.
+\mathrm{Tr}\!\left[n_{\rm env}\,\mathcal N_\sigma^{\mathrm c}(\rho_{L,K})\right]
+=\sigma^2\mathrm{Tr}(\rho_{L,K}G^2)\le\sigma^2K^2.
 ```
 
 The thermal maximum-entropy bound therefore gives
@@ -168,20 +168,20 @@ The mean-energy-constrained coding result used here is Wilde and Qi, *Energy-con
 Both relevant conditions hold here. First,
 
 ```math
-\operatorname{Tr}e^{-\beta n}=\frac{1}{1-e^{-\beta}}<\infty,\qquad \beta>0.
+\mathrm{Tr}e^{-\beta n}=\frac{1}{1-e^{-\beta}}<\infty,\qquad \beta>0.
 ```
 
 Second, the centered Gaussian squeezing law satisfies $`\mathbb E e^{2r}=\mathbb E e^{-2r}=e^{2\sigma^2}`$. Thus for every finite-energy input,
 
 ```math
-\operatorname{Tr}\!\left[\left(n+\frac12\right)\mathcal N_\sigma(\rho)\right]
-=e^{2\sigma^2}\operatorname{Tr}\!\left[\left(n+\frac12\right)\rho\right].
+\mathrm{Tr}\!\left[\left(n+\frac12\right)\mathcal N_\sigma(\rho)\right]
+=e^{2\sigma^2}\mathrm{Tr}\!\left[\left(n+\frac12\right)\rho\right].
 ```
 
 This identity follows first on finite-energy cores from the quadrature transformation and then for all finite quadratic-form energy inputs. Consequently
 
 ```math
-\sup_{\operatorname{Tr}(\rho n)\le E}S(\mathcal N_\sigma(\rho))
+\sup_{\mathrm{Tr}(\rho n)\le E}S(\mathcal N_\sigma(\rho))
 \le g_2\!\left(e^{2\sigma^2}(E+\tfrac12)-\tfrac12\right)<\infty.
 ```
 

@@ -35,7 +35,7 @@ The classical estimate behind the result is sharp:
 ```math
 X\sim\mathcal N(m,v),\quad v>0
 \quad\Longrightarrow\quad
-\operatorname{Var}(\ln|X|)\le\frac{\pi^2}{8}.
+\mathrm{Var}(\ln|X|)\le\frac{\pi^2}{8}.
 ```
 
 Equality holds when $`m=0`$. Rescaling $`X`$ adds a constant to $`\ln|X|`$, so its variance depends only on $`m^2/v`$.
@@ -45,16 +45,16 @@ To prove the bound, put $`\theta=m^2/(2v)`$ and let $`K`$ have the Poisson distr
 ```math
 \mathbb E\ln Z=\ln2+\psi(\nu/2),
 \qquad
-\operatorname{Var}(\ln Z)=\psi_1(\nu/2),
+\mathrm{Var}(\ln Z)=\psi_1(\nu/2),
 ```
 
 where $`\psi`$ and $`\psi_1`$ are the digamma and trigamma functions. These log moments and the Poisson-mixture representation are established distribution identities; see [Pav, equations (1), (4) and (6)](https://arxiv.org/html/1503.06266v1). The law of total variance gives
 
 ```math
-4\operatorname{Var}(\ln|X|)
+4\mathrm{Var}(\ln|X|)
 =F(\theta)
 :=\mathbb E_\theta\psi_1(K+\tfrac12)
-  +\operatorname{Var}_\theta\psi(K+\tfrac12).
+  +\mathrm{Var}_\theta\psi(K+\tfrac12).
 ```
 
 Let $`f(k)=\psi(k+\tfrac12)`$ and $`g(k)=(k+\tfrac12)^{-1}`$. Their recurrences give
@@ -71,16 +71,16 @@ For a Poisson expectation, differentiation with respect to its mean replaces a f
 \begin{aligned}
 \frac{d}{d\theta}\mathbb E_\theta\psi_1(K+\tfrac12)
   &=-\mathbb E_\theta g(K)^2,\\
-\frac{d}{d\theta}\operatorname{Var}_\theta f(K)
+\frac{d}{d\theta}\mathrm{Var}_\theta f(K)
   &=\mathbb E_\theta g(K)^2
-    +2\operatorname{Cov}_\theta(f(K),g(K)).
+    +2\mathrm{Cov}_\theta(f(K),g(K)).
 \end{aligned}
 ```
 
 Termwise differentiation is justified locally uniformly in $`\theta`$: $`f`$ grows only logarithmically, and $`g`$ and $`\psi_1(k+\tfrac12)`$ are bounded. The squared-increment terms cancel, leaving
 
 ```math
-F'(\theta)=2\operatorname{Cov}_\theta(f(K),g(K))\le0.
+F'(\theta)=2\mathrm{Cov}_\theta(f(K),g(K))\le0.
 ```
 
 Indeed, $`f`$ increases and $`g`$ decreases. For independent $`K,K'`$ the covariance has twice its value equal to
@@ -97,12 +97,12 @@ Write $`s=\sigma^2`$. For the radial translation channel $`\mathcal T_\sigma`$, 
 
 ```math
 I_c(\tau,\mathcal T_\sigma)
-\le\frac12\log_2\!\left(1+\frac{\operatorname{Var}_\tau(Y)}{s}\right).
+\le\frac12\log_2\!\left(1+\frac{\mathrm{Var}_\tau(Y)}{s}\right).
 ```
 
 This auxiliary bound is used only at finite covariance below. It does not require a coding theorem for a degenerate cost observable or an assumption that physical harmonic energy bounds $`P_y^2`$ for arbitrary states.
 
-An explicit pure Gaussian environment has variances $`\operatorname{Var}(q)=s`$ and $`\operatorname{Var}(p)=1/(4s)`$. Coupling by $`\exp(-iP_yq)`$ gives
+An explicit pure Gaussian environment has variances $`\mathrm{Var}(q)=s`$ and $`\mathrm{Var}(p)=1/(4s)`$. Coupling by $`\exp(-iP_yq)`$ gives
 
 ```math
 Y_B=Y+q,\quad P_{y,B}=P_y,
@@ -145,22 +145,22 @@ This function increases to $`\tfrac12\ln(1+v/s)`$. For a short verification, let
 2w f_v'(w)=a h(a)-\left(b-\frac{1}{4b}\right)h(b)\ge0.
 ```
 
-The first term is at least one. With $`t=1/(2b)`$, the second is $`(1-t^2)\operatorname{atanh}(t)/t\le1`$. Endpoints follow by continuity. The limit follows from $`G(z)=\ln(ez)+o(1)`$. Displacements preserve coherent information, so $`v`$ is the centered variance, not the uncentered second moment. Dividing by $`\ln2`$ proves the auxiliary bound.
+The first term is at least one. With $`t=1/(2b)`$, the second is $`(1-t^2)\mathrm{atanh}(t)/t\le1`$. Endpoints follow by continuity. The limit follows from $`G(z)=\ln(ez)+o(1)`$. Displacements preserve coherent information, so $`v`$ is the centered variance, not the uncentered second moment. Dividing by $`\ln2`$ proves the auxiliary bound.
 
 ## Applying the bound to physical Gaussian states
 
-Under the logarithmic unitary, write the input as $`\omega_{ZA}`$, with a two-dimensional sign register $`Z`$ and radial factor $`A`$. Let $`\tau_A=\operatorname{Tr}_Z\omega_{ZA}`$. The complement ignores $`Z`$, and therefore
+Under the logarithmic unitary, write the input as $`\omega_{ZA}`$, with a two-dimensional sign register $`Z`$ and radial factor $`A`$. Let $`\tau_A=\mathrm{Tr}_Z\omega_{ZA}`$. The complement ignores $`Z`$, and therefore
 
 ```math
 \begin{aligned}
-I_c(\omega_{ZA},\operatorname{id}_Z\otimes\mathcal T_\sigma)
+I_c(\omega_{ZA},\mathrm{id}_Z\otimes\mathcal T_\sigma)
  &=S(ZB)-S(E)\\
  &\le1+S(B)-S(E)\\
  &=1+I_c(\tau_A,\mathcal T_\sigma).
 \end{aligned}
 ```
 
-The distribution of $`Y`$ on $`\tau_A`$ is exactly that of $`\ln|Q|`$ on the physical input. A physical Gaussian state's $`Q`$ marginal is normal, so its variance is at most $`\pi^2/8`$ by the preceding lemma. This proves the one-mode bound.
+The distribution of $`Y`$ on $`\tau_A`$ is exactly that of $`\ln|Q|`$ on the physical input. A physical Gaussian state's $`Q`$ marginal is normal. The preceding lemma therefore gives $`\mathrm{Var}_{\tau_A}(Y)=\mathrm{Var}(\ln|Q|)\le\pi^2/8`$, which proves the one-mode bound.
 
 The moment and entropy domains are controlled here. Every finite-covariance Gaussian state has finite fourth-order physical quadrature moments. The radial momentum is the physical dilation generator $`P_y=(QP+PQ)/2`$, so its second moment is finite for these inputs. The normal log-radius distribution has a finite second moment as well. Thus the radial finite-covariance argument applies. Finite harmonic input energy also gives finite input entropy; the centered Gaussian squeeze mixture multiplies mean harmonic energy by the finite factor $`e^{2\sigma^2}`$, giving finite output entropy. Purification and subadditivity then bound the complementary entropy. None of the displayed entropy differences is an undefined infinity-minus-infinity expression.
 

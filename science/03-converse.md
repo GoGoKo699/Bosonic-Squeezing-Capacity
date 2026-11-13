@@ -75,9 +75,9 @@ The unitary log-coordinate transformation from the [model](01-model.md) identifi
 For $`J=(Q^2-P^2)/2`$, the ladder-operator identity on the Schwartz core is
 
 ```math
-\|G\psi\|^2+\|J\psi\|^2
+\Vert G\psi\Vert ^2+\Vert J\psi\Vert ^2
 =
-\|H\psi\|^2+\frac34\|\psi\|^2.
+\Vert H\psi\Vert ^2+\frac34\Vert \psi\Vert ^2.
 ```
 
 Indeed, $`J=(a^2+a^{\dagger2})/2`$ and
@@ -93,8 +93,8 @@ N^2+N+1
 H^2+\frac34.
 ```
 
-Approximation in the graph norm of $`H`$ extends the norm identity to $`\operatorname{Dom}H`$. Since $`G`$ and $`J`$ are closed, it also gives
-$`\operatorname{Dom}H\subseteq\operatorname{Dom}G\cap\operatorname{Dom}J`$.
+Approximation in the graph norm of $`H`$ extends the norm identity to $`\mathrm{Dom}H`$. Since $`G`$ and $`J`$ are closed, it also gives
+$`\mathrm{Dom}H\subseteq\mathrm{Dom}G\cap\mathrm{Dom}J`$.
 Consequently
 
 ```math
@@ -128,15 +128,15 @@ has finite first absolute moment as well. Its Shannon entropy is finite: compari
 Squeezing rescales the quadratures reciprocally. Gaussian averaging gives the exact energy identity
 
 ```math
-\operatorname{Tr}\!\left[H\mathcal N_\sigma(\rho)\right]
+\mathrm{Tr}\!\left[H\mathcal N_\sigma(\rho)\right]
 =
-e^{2\sigma^2}\operatorname{Tr}[H\rho].
+e^{2\sigma^2}\mathrm{Tr}[H\rho].
 ```
 
 It holds first on the common core and then at every finite harmonic energy by positive quadratic-form approximation. In particular, a block input $`\rho_{A^n}`$ satisfying
 
 ```math
-\operatorname{Tr}\!\left[
+\mathrm{Tr}\!\left[
 \rho_{A^n}\sum_{i=1}^nN_i
 \right]\le nE
 ```
@@ -144,7 +144,7 @@ It holds first on the common core and then at every finite harmonic energy by po
 has output $`\omega_{B^n}=\mathcal N_\sigma^{\otimes n}(\rho_{A^n})`$ with
 
 ```math
-\operatorname{Tr}\!\left[
+\mathrm{Tr}\!\left[
 \omega_{B^n}\sum_{i=1}^nH_i
 \right]\le nh_\sigma(E).
 ```
@@ -248,13 +248,13 @@ The channel preserves the joint spectral distribution of $`G_1,\ldots,G_n`$, so 
 For $`\beta>0`$, let
 
 ```math
-Z_\beta=\operatorname{Tr}e^{-\beta H}
+Z_\beta=\mathrm{Tr}e^{-\beta H}
 =\frac{1}{2\sinh(\beta/2)},
 \qquad
 \gamma_\beta=\frac{e^{-\beta H}}{Z_\beta},
 \qquad
 B_\beta=\sup_{j\in\mathbb Z}
-\operatorname{Tr}\!\left[P_je^{-\beta H}\right].
+\mathrm{Tr}\!\left[P_je^{-\beta H}\right].
 ```
 
 **Spectral-bin Gibbs inequality.** For every finite-energy $`n`$-mode state $`\omega`$,
@@ -263,17 +263,17 @@ B_\beta=\sup_{j\in\mathbb Z}
 S(\omega)-H(K^n)_\omega
 \le
 \frac{\beta}{\ln2}
-\operatorname{Tr}\!\left[\omega\sum_{i=1}^nH_i\right]
+\mathrm{Tr}\!\left[\omega\sum_{i=1}^nH_i\right]
 +n\log_2B_\beta.
 ```
 
-Apply relative-entropy data processing to the measurement of the joint projectors $`P_{j_1}\otimes\cdots\otimes P_{j_n}`$ and the reference state $`\gamma_\beta^{\otimes n}`$. If $`p_{\boldsymbol j}`$ is the measured distribution of $`\omega`$ and $`q_j=\operatorname{Tr}[P_j\gamma_\beta]`$, then
+Apply relative-entropy data processing to the measurement of the joint projectors $`P_{j_1}\otimes\cdots\otimes P_{j_n}`$ and the reference state $`\gamma_\beta^{\otimes n}`$. If $`p_{\boldsymbol j}`$ is the measured distribution of $`\omega`$ and $`q_j=\mathrm{Tr}[P_j\gamma_\beta]`$, then
 
 ```math
 \begin{aligned}
 &-S(\omega)
 +\frac{\beta}{\ln2}
-\operatorname{Tr}\!\left[\omega\sum_iH_i\right]
+\mathrm{Tr}\!\left[\omega\sum_iH_i\right]
 +n\log_2Z_\beta\\
 &\hspace{1cm}\ge
 -H(p)-\sum_{\boldsymbol j}
@@ -282,7 +282,7 @@ p_{\boldsymbol j}\log_2\!\left(\prod_iq_{j_i}\right).
 ```
 
 Rearranging and using
-$`Z_\beta q_j=\operatorname{Tr}[P_je^{-\beta H}]\le B_\beta`$
+$`Z_\beta q_j=\mathrm{Tr}[P_je^{-\beta H}]\le B_\beta`$
 proves the claim. The entropy and cross-entropy expressions are well defined: quantum relative entropy is finite at finite harmonic energy, data processing bounds its measured counterpart, and spectral-bin entropy is finite by the preceding form bound.
 
 Using the full harmonic partition function in this estimate would give only an order-$`\log E`$ converse. The heat-trace mass inside one fixed generator bin is much smaller.
@@ -290,12 +290,12 @@ Using the full harmonic partition function in this estimate would give only an o
 ## The harmonic heat trace in the dilation spectrum
 
 The exact characteristic function of the finite positive spectral measure
-$`\nu_\beta(du)=\operatorname{Tr}[e^{-\beta H}E_G(du)]`$ is
+$`\nu_\beta(du)=\mathrm{Tr}[e^{-\beta H}E_G(du)]`$ is
 
 ```math
 F_\beta(t)
 =
-\operatorname{Tr}\!\left[e^{-\beta H}e^{itG}\right]
+\mathrm{Tr}\!\left[e^{-\beta H}e^{itG}\right]
 =
 \frac{1}{\sqrt{2(\cosh\beta\cosh t-1)}}.
 ```
@@ -314,7 +314,7 @@ K_\beta(x,y)
 Inserting the coordinate action of squeezing in the trace reduces it to the convergent Gaussian integral
 
 ```math
-\operatorname{Tr}[e^{-\beta H}e^{-itG}]
+\mathrm{Tr}[e^{-\beta H}e^{-itG}]
 =
 e^{t/2}\int_{\mathbb R}K_\beta(x,e^tx)\,dx
 =
@@ -354,7 +354,7 @@ B_\beta
 &\le
 \frac1\pi
 \left[
-\operatorname{arsinh}\!\left(\frac1\beta\right)
+\mathrm{arsinh}\!\left(\frac1\beta\right)
 -\ln\tanh\!\left(\frac14\right)
 \right]\\
 &\le\frac1\pi\ln\!\left(\frac{c_*}{\beta}\right)

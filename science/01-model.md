@@ -60,7 +60,7 @@ for the maximum entropy of an oscillator of mean photon number $`u`$.
 An $`m`$-use entanglement-transmission code encodes a finite-dimensional logical system into $`m`$ input oscillators, applies $`\mathcal N_\sigma^{\otimes m}`$, and decodes jointly. Its entanglement fidelity is evaluated with an inaccessible reference. For the encoded maximally mixed logical state $`\rho_{A^m}`$, require
 
 ```math
-\operatorname{Tr}\!\left[\rho_{A^m}\sum_{j=1}^m\hat n_j\right]
+\mathrm{Tr}\!\left[\rho_{A^m}\sum_{j=1}^m\hat n_j\right]
 \le mE.
 ```
 
@@ -71,7 +71,7 @@ The capacity $`Q_\sigma(E)`$ is the supremum of reliable asymptotic qubit rates 
 ```math
 Q_\sigma(E)
 =\lim_{m\to\infty}\frac1m
-\sup_{\operatorname{Tr}\rho\sum_j\hat n_j\le mE}
+\sup_{\mathrm{Tr}\rho\sum_j\hat n_j\le mE}
 I_{\rm c}(\rho,\mathcal N_\sigma^{\otimes m}),
 ```
 
