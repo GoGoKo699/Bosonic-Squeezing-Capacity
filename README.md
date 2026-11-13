@@ -34,6 +34,10 @@ Start with the [scientific route](science/README.md) and [model](science/01-mode
 
 The [reference guide](references/README.md) identifies primary sources. The [LLM reading guide](llms.txt) maps questions to authoritative proofs. The [verification guide](verification/README.md) gives runnable checks and their limits.
 
+## Learn the project
+
+The selected foundation is Holevo’s *Quantum Systems, Channels, Information*, second revised and expanded edition (2019). The [source-to-project bridge](learning/anchor-and-bridge.md) connects its channel, entropy, energy-constraint and Gaussian-system language to the proofs here. The [30-milestone map](learning/milestones.md) builds from the oscillator model to the complete capacity law and its physical limits.
+
 ## Scope
 
 The squeezing axis and Gaussian law are known, each use has a fresh unobserved draw, and no correction occurs inside a channel use. The channel includes no photon loss or additional phase or displacement noise. The high-energy limit keeps $`\sigma>0`$ fixed.

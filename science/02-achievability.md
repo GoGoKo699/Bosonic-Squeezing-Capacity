@@ -78,10 +78,10 @@ The physical code subspace is
 
 ```math
 \mathcal C_{L,K}
-=W^\dagger\!\left(\operatorname{span}\{g_1,\ldots,g_d\}\otimes\mathbb C^2\right).
+=W^\dagger\!\left(\mathrm{span}\{g_1,\ldots,g_d\}\otimes\mathbb C^2\right).
 ```
 
-In particular, its generator second moment, interpreted as a quadratic form, satisfies $`\operatorname{Tr}(\rho G^2)\le K^2`$ for every normalized state supported on $`\mathcal C_{L,K}`$.
+In particular, its generator second moment, interpreted as a quadratic form, satisfies $`\mathrm{Tr}(\rho G^2)\le K^2`$ for every normalized state supported on $`\mathcal C_{L,K}`$.
 
 ### 2. The physical energy bound holds on the whole subspace
 
@@ -134,8 +134,8 @@ Here $`p_\rho`$ is the spectral density of $`G`$, with the sign factor traced ou
 Rescale the environment's canonical coordinates by $`R'=R/(\sqrt2\sigma)`$ and $`P'=\sqrt2\sigma P_R`$. Then $`e_0`$ is the ordinary oscillator vacuum and $`e_k`$ is a coherent state with amplitude $`-i\sigma k`$. Hence its mean excitation is $`\sigma^2k^2`$, and
 
 ```math
-\operatorname{Tr}\!\left[n_{\rm env}\,\mathcal N_\sigma^{\mathrm c}(\rho_{L,K})\right]
-=\sigma^2\operatorname{Tr}(\rho_{L,K}G^2)\le\sigma^2K^2.
+\mathrm{Tr}\!\left[n_{\rm env}\,\mathcal N_\sigma^{\mathrm c}(\rho_{L,K})\right]
+=\sigma^2\mathrm{Tr}(\rho_{L,K}G^2)\le\sigma^2K^2.
 ```
 
 The thermal maximum-entropy bound therefore gives
@@ -168,20 +168,20 @@ The mean-energy-constrained coding result used here is Wilde and Qi, *Energy-con
 Both relevant conditions hold here. First,
 
 ```math
-\operatorname{Tr}e^{-\beta n}=\frac{1}{1-e^{-\beta}}<\infty,\qquad \beta>0.
+\mathrm{Tr}e^{-\beta n}=\frac{1}{1-e^{-\beta}}<\infty,\qquad \beta>0.
 ```
 
 Second, the centered Gaussian squeezing law satisfies $`\mathbb E e^{2r}=\mathbb E e^{-2r}=e^{2\sigma^2}`$. Thus for every finite-energy input,
 
 ```math
-\operatorname{Tr}\!\left[\left(n+\frac12\right)\mathcal N_\sigma(\rho)\right]
-=e^{2\sigma^2}\operatorname{Tr}\!\left[\left(n+\frac12\right)\rho\right].
+\mathrm{Tr}\!\left[\left(n+\frac12\right)\mathcal N_\sigma(\rho)\right]
+=e^{2\sigma^2}\mathrm{Tr}\!\left[\left(n+\frac12\right)\rho\right].
 ```
 
 This identity follows first on finite-energy cores from the quadrature transformation and then for all finite quadratic-form energy inputs. Consequently
 
 ```math
-\sup_{\operatorname{Tr}(\rho n)\le E}S(\mathcal N_\sigma(\rho))
+\sup_{\mathrm{Tr}(\rho n)\le E}S(\mathcal N_\sigma(\rho))
 \le g_2\!\left(e^{2\sigma^2}(E+\tfrac12)-\tfrac12\right)<\infty.
 ```
 

@@ -14,6 +14,8 @@ The central task is ordinary unassisted quantum communication through iid, unobs
 - Physical interpretation and scope: science/07-interpretation.md.
 - Primary bibliography and pinned public comparison accounts: references/README.md.
 - Numerical and structural checks: verification/README.md and verification/REPORT.md.
+- Selected Holevo 2019 anchor, notation and source-to-project bridge: learning/anchor-and-bridge.md.
+- Shared understanding map, exactly M01–M30: learning/milestones.md.
 
 ## Distinctions to preserve
 

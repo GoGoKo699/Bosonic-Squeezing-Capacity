@@ -11,7 +11,7 @@ The purpose of this account is to make the subsystem's exact action under the pr
 Let $`\Pi=(-1)^n`$ be physical parity, so $`(\Pi\psi)(x)=\psi(-x)`$. The bounded observables
 
 ```math
-A=\operatorname{sgn}(Q),\qquad \Pi=(-1)^n
+A=\mathrm{sgn}(Q),\qquad \Pi=(-1)^n
 ```
 
 satisfy
@@ -47,7 +47,7 @@ Both logical observables commute with every fixed-axis squeezing unitary. The ch
 
 ```math
 W\,\mathcal N_\sigma(W^\dagger(\,\cdot\,)W)\,W^\dagger
-=\mathcal T_\sigma\otimes\operatorname{id}_{\rm L},\qquad
+=\mathcal T_\sigma\otimes\mathrm{id}_{\rm L},\qquad
 \mathcal T_\sigma(\eta)=\int p_\sigma(r)T_r\eta T_r^\dagger\,dr.
 ```
 
@@ -59,7 +59,7 @@ Choose a fixed normalized gauge state $`\eta`$ on $`L^2(\mathbb R_y)`$ for which
 
 ```math
 \mathcal E_\eta(\tau)=W^\dagger(\eta\otimes\tau)W,\qquad
-\mathcal D(\rho)=\operatorname{Tr}_{y}(W\rho W^\dagger).
+\mathcal D(\rho)=\mathrm{Tr}_{y}(W\rho W^\dagger).
 ```
 
 These are a trace-preserving encoder and decoder. The channel changes only the gauge state:
@@ -73,13 +73,13 @@ Hence
 
 ```math
 \mathcal D\circ\mathcal N_\sigma\circ\mathcal E_\eta
-=\operatorname{id}_{\rm L}.
+=\mathrm{id}_{\rm L}.
 ```
 
 For every external reference $`R`$ and every joint state $`\omega_{R{\rm L}}`$,
 
 ```math
-\bigl(\operatorname{id}_R\otimes
+\bigl(\mathrm{id}_R\otimes
  [\mathcal D\circ\mathcal N_\sigma\circ\mathcal E_\eta]\bigr)
  (\omega_{R{\rm L}})=\omega_{R{\rm L}}.
 ```
