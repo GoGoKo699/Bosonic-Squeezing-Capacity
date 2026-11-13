@@ -75,9 +75,9 @@ The unitary log-coordinate transformation from the [model](01-model.md) identifi
 For $`J=(Q^2-P^2)/2`$, the ladder-operator identity on the Schwartz core is
 
 ```math
-\|G\psi\|^2+\|J\psi\|^2
+\Vert G\psi\Vert ^2+\Vert J\psi\Vert ^2
 =
-\|H\psi\|^2+\frac34\|\psi\|^2.
+\Vert H\psi\Vert ^2+\frac34\Vert \psi\Vert ^2.
 ```
 
 Indeed, $`J=(a^2+a^{\dagger2})/2`$ and

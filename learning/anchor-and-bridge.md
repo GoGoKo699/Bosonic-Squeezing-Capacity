@@ -64,27 +64,35 @@ The two logarithms in the capacity law have different conventions: $`\ln E`$ is 
 
 ## Dependencies of the proof
 
-1. **State the communication task before changing coordinates.** The [model](../science/01-model.md) specifies an unknown logical register entangled with a reference, unrestricted encoding and collective decoding, and independent uses of the channel. The unconditional budget is
+### 1. State the communication task before changing coordinates.
 
-   ```math
-   \mathrm{Tr}\!\left[\rho_{A^m}\sum_{j=1}^m\hat n_j\right]\le mE.
-   ```
+The [model](../science/01-model.md) specifies an unknown logical register entangled with a reference, unrestricted encoding and collective decoding, and independent uses of the channel. The unconditional budget is
 
-   This permits correlated inputs, nonuniform energy allocation, and photon-number tails. There is no hard cutoff or Gaussian-input assumption.
+```math
+\mathrm{Tr}\!\left[\rho_{A^m}\sum_{j=1}^m\hat n_j\right]\le mE.
+```
 
-2. **Establish the increasing-dimensional lower construction.** In [achievability](../science/02-achievability.md), track normalization, the transformed physical energy, and the generator second moment for every state in the code subspace. The input entropy is $`\log_2(2d)`$; the complementary entropy is bounded by $`g_2(\sigma^2K^2)`$. The coding theorem then turns positive coherent information into asymptotically reliable rates.
+This permits correlated inputs, nonuniform energy allocation, and photon-number tails. There is no hard cutoff or Gaussian-input assumption.
 
-3. **Read the converse as an information balance.** In [the upper bound](../science/03-converse.md), the environment already receives most of the spectral-bin information. Relative-entropy data processing bounds what the receiver can retain beyond it. The [Mehler calculation](../science/03-converse.md#the-harmonic-heat-trace-in-the-dilation-spectrum) supplies the logarithmic heat-trace mass that produces the second logarithm. This part covers arbitrary block inputs.
+### 2. Establish the increasing-dimensional lower construction.
 
-4. **Interpret the Gaussian comparison at its stated scope.** For joint physical Gaussian inputs, including arbitrary correlations across modes, [the benchmark](../science/05-gaussian-inputs.md) proves
+In [achievability](../science/02-achievability.md), track normalization, the transformed physical energy, and the generator second moment for every state in the code subspace. The input entropy is $`\log_2(2d)`$; the complementary entropy is bounded by $`g_2(\sigma^2K^2)`$. The coding theorem then turns positive coherent information into asymptotically reliable rates.
 
-   ```math
-   I_{\rm c}\!\left(\rho_G^{(m)},\mathcal N_\sigma^{\otimes m}\right)
-   \le mB_\sigma,\qquad
-   B_\sigma=1+\frac12\log_2\!\left(1+\frac{\pi^2}{8\sigma^2}\right).
-   ```
+### 3. Read the converse as an information balance.
 
-   This bound stays finite as input energy increases, while the explicit non-Gaussian family has unbounded coherent information. The restriction concerns the joint physical input state in that optimization; collective decoding remains unrestricted. It is not a classification of Gaussian hardware.
+In [the upper bound](../science/03-converse.md), the environment already receives most of the spectral-bin information. Relative-entropy data processing bounds what the receiver can retain beyond it. The [Mehler calculation](../science/03-converse.md#the-harmonic-heat-trace-in-the-dilation-spectrum) supplies the logarithmic heat-trace mass that produces the second logarithm. This part covers arbitrary block inputs.
+
+### 4. Interpret the Gaussian comparison at its stated scope.
+
+For joint physical Gaussian inputs, including arbitrary correlations across modes, [the benchmark](../science/05-gaussian-inputs.md) proves
+
+```math
+I_{\rm c}\!\left(\rho_G^{(m)},\mathcal N_\sigma^{\otimes m}\right)
+\le mB_\sigma,\qquad
+B_\sigma=1+\frac12\log_2\!\left(1+\frac{\pi^2}{8\sigma^2}\right).
+```
+
+This bound stays finite as input energy increases, while the explicit non-Gaussian family has unbounded coherent information. The restriction concerns the joint physical input state in that optimization; collective decoding remains unrestricted. It is not a classification of Gaussian hardware.
 
 The [30 project milestones](milestones.md) develop this connected route. Their statements are project-specific; the anchor provides the common mathematical vocabulary.
 
