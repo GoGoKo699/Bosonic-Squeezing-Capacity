@@ -62,7 +62,7 @@ def main():
     out = ROOT / "figures"
     out.mkdir(exist_ok=True)
     with (out / "capacity_bounds.csv").open("w", newline="") as stream:
-        writer = csv.writer(stream)
+        writer = csv.writer(stream, lineterminator="\n")
         writer.writerow(["log10_mean_input_photons", "mean_input_photons",
                          "achievable_rate_lower_bound",
                          "unrestricted_capacity_upper_bound",
