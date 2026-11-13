@@ -160,7 +160,7 @@ I_c(\omega_{ZA},\mathrm{id}_Z\otimes\mathcal T_\sigma)
 \end{aligned}
 ```
 
-The distribution of $`Y`$ on $`\tau_A`$ is exactly that of $`\ln|Q|`$ on the physical input. A physical Gaussian state's $`Q`$ marginal is normal, so its variance is at most $`\pi^2/8`$ by the preceding lemma. This proves the one-mode bound.
+The distribution of $`Y`$ on $`\tau_A`$ is exactly that of $`\ln|Q|`$ on the physical input. A physical Gaussian state's $`Q`$ marginal is normal. The preceding lemma therefore gives $`\mathrm{Var}_{\tau_A}(Y)=\mathrm{Var}(\ln|Q|)\le\pi^2/8`$, which proves the one-mode bound.
 
 The moment and entropy domains are controlled here. Every finite-covariance Gaussian state has finite fourth-order physical quadrature moments. The radial momentum is the physical dilation generator $`P_y=(QP+PQ)/2`$, so its second moment is finite for these inputs. The normal log-radius distribution has a finite second moment as well. Thus the radial finite-covariance argument applies. Finite harmonic input energy also gives finite input entropy; the centered Gaussian squeeze mixture multiplies mean harmonic energy by the finite factor $`e^{2\sigma^2}`$, giving finite output entropy. Purification and subadditivity then bound the complementary entropy. None of the displayed entropy differences is an undefined infinity-minus-infinity expression.
 
